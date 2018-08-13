@@ -1,0 +1,46 @@
+<div style="height: 100vh;">
+
+    <mat-toolbar color="primary" mat-scroll-shrink>
+
+        <button mat-icon-button (click)="sidenav.open()" fxShow="true" fxHide.gt-sm="true">
+            <mat-icon>menu</mat-icon>
+          </button>
+
+      <span>ROLLER DERBY MANAGER</span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true">
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a href="#" mat-button>Home</a>
+        <a href="#" mat-button>Services</a>
+        <a href="#" mat-button>Start</a>
+        <a href="#" mat-button>Contact</a>
+      </div>
+      <span class="menu-log"></span>
+      <div fxShow="true" fxHide.lt-md="true">
+          <a href="#" mat-button>Login</a>
+          <a href="#" mat-button>Logout</a>
+          <a href="#" mat-button>My account</a>
+        </div>
+  
+    </mat-toolbar>
+  
+    <mat-sidenav-container fxFlexFill class="example-container">
+      <mat-sidenav #sidenav fxLayout="column">
+        <div fxLayout="column">
+          <a href="#" mat-button>Home</a>
+          <a href="#" mat-button>Services</a>
+          <a href="#" mat-button>Start</a>
+          <a href="#" mat-button>Contact</a>
+          <a href="#" mat-button>Login</a>
+          <a href="#" mat-button>Logout</a>
+          <a href="#" mat-button>My account</a>
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>  
+        <p>Demoing some content to make this thing scroll</p>
+        <p>Demoing some content to make this thing scroll</p>
+        <p>Demoing some content to make this thing scroll</p>
+        <p>Demoing some content to make this thing scroll</p>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>

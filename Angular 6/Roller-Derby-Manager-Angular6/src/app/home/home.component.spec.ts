@@ -3,7 +3,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { HomeComponent } from './home.component';
-import { AuthService } from '../auth-service.service';
+import { AuthService } from '../auth/auth-service.service';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
