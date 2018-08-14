@@ -17,9 +17,22 @@
       </div>
       <span class="menu-log"></span>
       <div fxShow="true" fxHide.lt-md="true">
-          <a href="#" mat-button>Login</a>
-          <a href="#" mat-button>Logout</a>
+<!--      <button id="qsLoginBtn"
+      class="btn btn-primary my-2 my-sm-0"
+      *ngIf="!auth.isAuthenticated()"
+      (click)="auth.login()" type="button">
+        Log In
+    </button>
+
+    <button id="qsLogoutBtn"a
+      class="btn btn-primary my-2 my-sm-0"
+      *ngIf="auth.isAuthenticated()"
+      (click)="auth.logout()" type="button">
+        Log Out
+    </button> -->
           <a href="#" mat-button>My account</a>
+          <button mat-stroked-button id="qsLoginBtn" (click)="auth.login()" >Log In</button>
+          <button mat-stroked-button>Log Out</button>
         </div>
   
     </mat-toolbar>
